@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+  "prepare": "husky",
+  "staging": "node --env-file=.env.staging src/app.js",
+  "preprod": "node --env-file=.env.preprod src/app.js",
+  "prod": "node --env-file=.env.prod src/app.js"
   },
   "keywords": [],
   "author": "",
